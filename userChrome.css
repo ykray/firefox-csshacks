@@ -1,0 +1,28 @@
+/* cspell: disable */
+
+@import url(chrome/autohide_bookmarks_toolbar.css);
+
+@import url(chrome/urlbar_centered_text.css);
+@import url(chrome/urlbar_connection_type_background_colors.css);
+@import url(chrome/urlbar_connection_type_text_colors.css);
+@import url(chrome/urlbar_info_icons_on_hover.css);
+@import url(chrome/page_action_buttons_on_urlbar_hover.css);
+
+@import url(chrome/tabs_on_bottom.css);
+@import url(chrome/multi-row_tabs.css);
+@import url(chrome/tabs_fill_available_width.css);
+@import url(chrome/tab_close_button_always_on_hover.css);
+@import url(chrome/tab_separator_lines.css);
+@import url(chrome/tab_line_loading_indicator.css);
+@import url(chrome/newtab_button_always_on_hover.css);
+
+@import url(chrome/floating_findbar_on_top.css);
+@import url(chrome/privatemode_indicator_as_menu_button.css);
+
+:root {
+  --tab-min-height: 30px !important;
+}
+
+#personal-bookmarks {
+  background-color: #121722 !important;
+}

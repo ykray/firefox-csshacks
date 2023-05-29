@@ -4,10 +4,10 @@ See the above repository for updates as well as full license text. */
 /* Makes Responsive Design Mode use a theme based on prefers-color-scheme - Set your devtools theme to Light for this to work */
 /* This style accompanies ../content/auto_devtools_theme.css which does the same for other parts of devtools. */
 
-
-@-moz-document url("chrome://devtools/content/responsive/toolbar.xhtml"){
-  @media (prefers-color-scheme:dark){
-    :root{  
+@-moz-document url("chrome://devtools/content/responsive/toolbar.xhtml")
+{
+  @media (prefers-color-scheme: dark) {
+    :root {
       --theme-body-background: #232327 !important;
 
       /* Toolbar */
@@ -34,13 +34,12 @@ See the above repository for updates as well as full license text. */
       /* Buttons */
       --theme-button-background: rgba(249, 249, 250, 0.1) !important;
       --theme-button-active-background: rgba(249, 249, 250, 0.15) !important;
-    
+
       /* Selection */
       --theme-selection-background: #204e8a !important;
       --theme-selection-background-hover: #353b48 !important;
       --theme-selection-focus-background: var(--grey-60) !important;
       --theme-selection-color: #ffffff !important;
-
 
       /* Border color that splits the toolbars/panels/headers. */
       --theme-splitter-color: var(--grey-70) !important;
@@ -64,8 +63,8 @@ See the above repository for updates as well as full license text. */
   }
 }
 
-@media (prefers-color-scheme:dark){
-  #appcontent[devtoolstheme]{
+@media (prefers-color-scheme: dark) {
+  #appcontent[devtoolstheme] {
     --rdm-browser-container-background: #18181a !important;
     --rdm-browser-box-shadow: 0 4px 4px 0 rgba(105, 105, 105, 0.26) !important;
   }

@@ -8,14 +8,16 @@ See the above repository for updates as well as full license text. */
  */
 
 #PopupSearchAutoComplete,
-#searchbar{
-   /* text input is clipped if this is too large compared to font-size. */
-    --uc-searchbar-border-radius: 6px;
+#searchbar {
+  /* text input is clipped if this is too large compared to font-size. */
+  --uc-searchbar-border-radius: 6px;
 }
 
-#PopupSearchAutoComplete{
+#PopupSearchAutoComplete {
   --uc-inner-margin: 6px;
-  --uc-searchbar-border-outer-radius: calc(var(--uc-searchbar-border-radius) + var(--uc-inner-margin));
+  --uc-searchbar-border-outer-radius: calc(
+    var(--uc-searchbar-border-radius) + var(--uc-inner-margin)
+  );
   --arrowpanel-border-color: transparent !important;
   margin-top: calc(1px - var(--uc-searchbar-border-radius));
   outline: 2px solid var(--toolbar-field-focus-border-color) !important;
@@ -27,20 +29,24 @@ See the above repository for updates as well as full license text. */
   padding-bottom: 6px;
   filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
   background: transparent !important;
-  border-radius: 0 0 var(--uc-searchbar-border-outer-radius) var(--uc-searchbar-border-outer-radius) !important;
+  border-radius: 0 0 var(--uc-searchbar-border-outer-radius)
+    var(--uc-searchbar-border-outer-radius) !important;
 }
 
-#searchbar:focus-within{ border-radius: var(--uc-searchbar-border-radius) !important; }
-
-slot{
-  border-radius: 0 0 var(--uc-searchbar-border-radius) var(--uc-searchbar-border-radius) !important;
+#searchbar:focus-within {
+  border-radius: var(--uc-searchbar-border-radius) !important;
 }
-#PopupSearchAutoComplete::before{
+
+slot {
+  border-radius: 0 0 var(--uc-searchbar-border-radius)
+    var(--uc-searchbar-border-radius) !important;
+}
+#PopupSearchAutoComplete::before {
   height: 8px;
   background: var(--toolbar-field-focus-background-color);
   border-inline: 2px solid var(--toolbar-field-focus-border-color);
   display: flex;
-  content: "";
+  content: '';
   position: relative;
   z-index: 2;
 }

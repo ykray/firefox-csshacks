@@ -2,16 +2,17 @@
 See the above repository for updates as well as full license text. */
 
 /* You should enable any non-default theme for these to apply properly. Built-in dark and light themes should work */
-:root{
+:root {
+  --focus-outline: red !important;
   /* Popup panels */
   --arrowpanel-background: olive !important;
   --arrowpanel-border-color: green !important;
   --arrowpanel-color: cyan !important;
-  --arrowpanel-dimmed: rgba(0,0,0,0.4) !important;
+  --arrowpanel-dimmed: rgba(0, 0, 0, 0.4) !important;
   /* window and toolbar background */
   --lwt-accent-color: red !important;
   --lwt-accent-color-inactive: green !important;
-  --toolbar-bgcolor: rgba(0,0,0,0.4) !important;  
+  --toolbar-bgcolor: rgba(0, 0, 0, 0.4) !important;
   /* tabs with system theme - text is not controlled by variable */
   --tab-selected-bgcolor: powderblue !important;
   /* tabs with any other theme */
@@ -41,8 +42,14 @@ See the above repository for updates as well as full license text. */
 }
 /* line between nav-bar and tabs toolbar,
     also fallback color for border around selected tab */
-#navigator-toolbox{ --lwt-tabs-border-color: cyan !important; }
+#navigator-toolbox {
+  --lwt-tabs-border-color: cyan !important;
+}
 /* Line above tabs */
-#tabbrowser-tabs{ --lwt-tab-line-color: white !important; }
+#tabbrowser-tabs {
+  --lwt-tab-line-color: white !important;
+}
 /* the header-area of sidebar needs this to work */
-#sidebar-box{ --sidebar-background-color: purple !important; }
+#sidebar-box {
+  --sidebar-background-color: purple !important;
+}

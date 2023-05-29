@@ -3,9 +3,11 @@ See the above repository for updates as well as full license text. */
 
 /* Makes pinned tabs behave like normal tabs, making their title and close buttons visible and making them "non-positioned" when tab strip is overflowing */
 
-#tabbrowser-tabs{ padding-inline-start: 0px !important }
+#tabbrowser-tabs {
+  padding-inline-start: 0px !important;
+}
 
-.tabbrowser-tab{
+.tabbrowser-tab {
   flex-grow: 100;
   -moz-box-flex: 100; /* Fx <112 compatibility */
   max-width: 225px;
@@ -14,23 +16,46 @@ See the above repository for updates as well as full license text. */
   transition: min-width 100ms ease-out, max-width 100ms ease-out;
   margin-inline-start: 0px !important;
   position: initial !important;
-  display: flex !important
+  display: flex !important;
 }
 
-.tab-stack{ flex-grow: 1 } /* Fx <112 compatibility */
-.tabbrowser-tab[pinned] > .tab-stack{ border: none !important; }
-.tabbrowser-tab[pinned]::after{ position: static !important; margin-block: 0px 1px !important; }
+.tab-stack {
+  flex-grow: 1;
+} /* Fx <112 compatibility */
+.tabbrowser-tab[pinned] > .tab-stack {
+  border: none !important;
+}
+.tabbrowser-tab[pinned]::after {
+  position: static !important;
+  margin-block: 0px 1px !important;
+}
 
-.tabbrowser-tab[selected]{ position: relative !important; }
+.tabbrowser-tab[selected] {
+  position: relative !important;
+}
 
-.tab-label-container{ width: unset !important; }
-.tab-label-container[pinned]{ margin-inline-start: 8px }
+.tab-label-container {
+  width: unset !important;
+}
+.tab-label-container[pinned] {
+  margin-inline-start: 8px;
+}
 
-.tab-icon-sound:is([soundplaying],[muted],[activemedia-blocked],[pictureinpicture]),
+.tab-icon-sound:is([soundplaying], [muted], [activemedia-blocked], [pictureinpicture]),
+.tab-icon-overlay {
+  display: none !important;
+}
 
-.tab-icon-overlay{ display: none !important; }
-
-#tabbrowser-tabs[closebuttons="activetab"] > #tabbrowser-arrowscrollbox > .tabbrowser-tab > .tab-stack > .tab-content > .tab-close-button:not([selected="true"]){ display: none !important; }
+#tabbrowser-tabs[closebuttons='activetab']
+  > #tabbrowser-arrowscrollbox
+  > .tabbrowser-tab
+  > .tab-stack
+  > .tab-content
+  > .tab-close-button:not([selected='true']) {
+  display: none !important;
+}
 
 /* Comment out or remove this if you want pinned tabs to never have close-button */
-.tab-close-button{ display: flex !important; }
+.tab-close-button {
+  display: flex !important;
+}

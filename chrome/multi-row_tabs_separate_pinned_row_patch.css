@@ -3,19 +3,19 @@ See the above repository for updates as well as full license text. */
 
 /* Use with multi-row_tabs.css to show pinned tabs on separate row. */
 
-scrollbox[part][orient="horizontal"]::after{
+scrollbox[part][orient='horizontal']::after {
   display: flow-root list-item;
-  content: "";
+  content: '';
   flex-basis: -moz-available;
   height: 0;
   overflow: hidden;
 }
 
 .tabbrowser-tab:not([pinned]),
-.tabbrowser-tab:not([pinned]) + #tabs-newtab-button{
+.tabbrowser-tab:not([pinned]) + #tabs-newtab-button {
   order: 1;
 }
 
-.tabbrowser-tab[first-visible-unpinned-tab]{
+.tabbrowser-tab[first-visible-unpinned-tab] {
   margin-inline-start: 0 !important;
 }

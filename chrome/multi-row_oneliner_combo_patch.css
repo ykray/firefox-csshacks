@@ -12,7 +12,7 @@ There is no good way to handle scrollable multiple rows so you should set the ma
 
 This will NOT work correctly if you have hidden tabs such as with tab groups extensions
  */
- 
+
 /*
 You will need 5 other stylesheets - order may or may not matter, but this patch needs to be loaded last
 
@@ -25,29 +25,31 @@ chrome/urlbar_full_width.css
 
 /* Instructions over, begin CSS */
 
-#navigator-toolbox > #nav-bar{
+#navigator-toolbox > #nav-bar {
   margin-top: 0px !important;
   padding-left: 0px !important;
 }
 
-@media screen and (min-width: 1100px){
-  
-  .urlbarView{
+@media screen and (min-width: 1100px) {
+  .urlbarView {
     position: fixed !important;
-    top: calc(var(--uc-toolbar-height))
+    top: calc(var(--uc-toolbar-height));
   }
-  #nav-bar{ border-right-width: 0px !important }
-  #TabsToolbar{
-    margin-top: calc(0px - var(--uc-toolbar-height,0px));
+  #nav-bar {
+    border-right-width: 0px !important;
+  }
+  #TabsToolbar {
+    margin-top: calc(0px - var(--uc-toolbar-height, 0px));
     margin-left: 0px;
   }
   #tabbrowser-tabs .tabbrowser-tab:first-child,
-  #tabbrowser-tabs .tabbrowser-tab[first-visible-tab]{
+  #tabbrowser-tabs .tabbrowser-tab[first-visible-tab] {
     margin-left: var(--uc-navigationbar-width) !important;
   }
-
 }
 
-@media screen and (max-width: 1700px){
-  #urlbar-container{ min-width:unset !important }
+@media screen and (max-width: 1700px) {
+  #urlbar-container {
+    min-width: unset !important;
+  }
 }

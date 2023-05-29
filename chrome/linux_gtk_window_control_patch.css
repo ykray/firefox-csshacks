@@ -4,7 +4,7 @@ See the above repository for updates as well as full license text. */
 /* Overrides the appearance of the window controls with something that more closely matches "normal" buttons*/
 /* More importantly, this makes window controls to respect layout rules the other styles rely on */
 
-.titlebar-buttonbox{
+.titlebar-buttonbox {
   -moz-box-align: stretch !important; /* Fx <112 compatibility */
   align-items: stretch !important;
 }
@@ -17,11 +17,14 @@ See the above repository for updates as well as full license text. */
   flex-grow: 1;
   overflow: -moz-hidden-unscrollable;
 }
-.titlebar-button:hover{ background-color: rgba(0,0,0,0.1) }
-.titlebar-min{ list-style-image: url(chrome://browser/skin/zoom-out.svg); }
-.titlebar-close{
+.titlebar-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.titlebar-min {
+  list-style-image: url(chrome://browser/skin/zoom-out.svg);
+}
+.titlebar-close {
   list-style-image: url(chrome://global/skin/icons/close.svg);
   fill-opacity: 0;
-  stroke: currentColor
+  stroke: currentColor;
 }
-

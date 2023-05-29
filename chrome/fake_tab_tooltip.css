@@ -7,7 +7,7 @@ See the above repository for updates as well as full license text. */
  * else in the toolbar area.
  */
 
-.tabbrowser-tab:hover::after{
+.tabbrowser-tab:hover::after {
   display: block;
   content: attr(label);
   background: var(--arrowpanel-background);
@@ -15,9 +15,11 @@ See the above repository for updates as well as full license text. */
   color: var(--arrowpanel-color);
   padding: 0.3em;
   position: fixed;
-  transform: translateY(calc(var(--tab-min-height) + 2 * var(--tab-block-margin)));
+  transform: translateY(
+    calc(var(--tab-min-height) + 2 * var(--tab-block-margin))
+  );
   z-index: 2;
   color-scheme: dark;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.3)
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

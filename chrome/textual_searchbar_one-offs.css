@@ -3,27 +3,31 @@ See the above repository for updates as well as full license text. */
 
 /* Makes the one-off search buttons in the searchbar popup show vertically with a label */
 
-#PopupSearchAutoComplete .search-panel-one-offs{
+#PopupSearchAutoComplete .search-panel-one-offs {
   display: flex !important;
   flex-direction: column;
 }
 
-#PopupSearchAutoComplete .search-panel-one-offs-container{
-  flex-direction: column !important; 
+#PopupSearchAutoComplete .search-panel-one-offs-container {
+  flex-direction: column !important;
 }
 
-#PopupSearchAutoComplete .searchbar-engine-one-off-item{
+#PopupSearchAutoComplete .searchbar-engine-one-off-item {
   display: flex !important;
   margin-inline: 8px !important;
   align-items: center;
-  align-self: unset !important; 
+  align-self: unset !important;
 }
 
-#PopupSearchAutoComplete .searchbar-engine-one-off-item > .button-box{ max-width: 30px; }
+#PopupSearchAutoComplete .searchbar-engine-one-off-item > .button-box {
+  max-width: 30px;
+}
 
-#PopupSearchAutoComplete .search-panel-one-offs{ max-width: unset !important; }
+#PopupSearchAutoComplete .search-panel-one-offs {
+  max-width: unset !important;
+}
 
-#PopupSearchAutoComplete .searchbar-engine-one-off-item::after{
+#PopupSearchAutoComplete .searchbar-engine-one-off-item::after {
   content: attr(tooltiptext);
   display: inline-flex;
   flex-grow: 1;
